@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FullScreenLoader from '../components/ui/FullScreenLoader.tsx';
 import { useLanguage } from '../contexts/LanguageContext.tsx';
-import Spline from '@splinetool/react-spline';
 import { motion } from 'framer-motion';
 
 // Apply backend URL from env variables
@@ -141,29 +140,15 @@ const WelcomePage = () => {
                 />
             )}
 
-            <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
-                {/* Spline Animation */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 4, delay: 4 }}
-                    className="absolute inset-0 z-0">
-                    <Spline
-                        scene="https://prod.spline.design/CzK92Dk0nmkxt6Vm/scene.splinecode" // Animation 1
-                    // scene="https://prod.spline.design/a3RBWQKHXNnNMlkr/scene.splinecode" // Animation 2
-                    // scene="https://prod.spline.design/M6g1zfrHtQTDweYc/scene.splinecode" // Animation 3
-                    />
-                </motion.div>
-
-                {/* Animated Background Elements */}
+            <div className="min-h-screen flex items-center justify-center p-4 bg-[#181818]">
                 {isLoading ? (
-                    <div className="text-gray-300 text-xl relative z-10">{t('welcome.loading')}</div>
+                    <div className="text-gray-300 text-xl">{t('welcome.loading')}</div>
                 ) : (
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="user-information w-[500px] mt-10 p-6 rounded-lg bg-black/20 backdrop-blur-sm border border-white/10 relative z-10">
+                        className="user-information w-[500px] mt-10 p-6 rounded-lg bg-black/20 backdrop-blur-sm border border-white/10">
 
                         <h2 className="text-2xl text-gray-300 font-bold mb-4">{t('welcome.title').replace('{name}', user.name)}</h2>
                         <p className="text-gray-100 mb-2">{t('welcome.email')} <span className="font-medium">{user.email}</span></p>
