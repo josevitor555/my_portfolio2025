@@ -2,11 +2,10 @@
 
 Este projeto tem como objetivo apresentar minha trajetória, experiências e alguns trabalhos realizados ao longo do meu aprendizado e desenvolvimento como profissional da área de tecnologia.
 
-Live demo: https://josevitor-portfolio.onrender.com/
+Live demo: [https://josevitor-portfolio.onrender.com/](https://my-portfolio2025-rx2d.onrender.com)
 
 #### Imagem do banner
-<img width="956" height="455" alt="Captura de tela 2025-09-05 181654" src="https://github.com/user-attachments/assets/132f1e3f-f4c6-4e44-b802-b464b38071c1" />
-
+<img width="1919" height="910" alt="Captura de tela 2025-11-09 183939" src="https://github.com/user-attachments/assets/dedffafd-c05c-4e3e-a464-a9e105b202b0" />
 
 ### Sobre as sessões:
 
