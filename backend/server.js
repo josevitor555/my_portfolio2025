@@ -1,0 +1,65 @@
+// Import express
+import express from 'express';
+
+// Import axios
+import axios from 'axios';
+
+// Import env for enviroment variables
+import dotenv from 'dotenv';
+
+// Configure env
+dotenv.config();
+
+// Import cors
+import cors from 'cors';
+
+// Import connectMongo function
+import connectMongo from './connectMongo/connect.js';
+
+// Import auth routes
+import authRoutes from './routes/authRoutes.js';
+
+// Create app express
+const app = express();
+
+// Configure cors for connection from backend to frontend
+app.use(cors({
+    origin: [
+        'http://localhost:5173', // Development
+        'https://josevitor-portfolio.onrender.com' // Production
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Middleware to parse JSON
+app.use(express.json());
+
+// Use auth routes
+app.use('/api/auth', authRoutes);
+
+// Simple route
+// app.get("/", (req, res) => {
+//   res.json({ message: "Welcome to the backend of the project" });
+// })
+
+// Connect to MongoDB immediately on server start
+connectMongo();
+
+// Simple route to test MongoDB connection
+app.get("/", async (req, res) => {
+  try {
+    res.status(200).json({ message: "Server is running and MongoDB connection established" });
+  } catch (error) {
+    res.status(500).json({ message: "Error connecting to MongoDB" });
+  }
+});
+
+// App port
+const port = process.env.PORT || 3000;
+
+// Initialize app
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});

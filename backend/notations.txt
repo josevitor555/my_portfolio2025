@@ -1,0 +1,19 @@
+Password:
+Username:
+
+mongodb+srv:
+
+//////////////////////////////// MCP Servers ////////////////////////////////
+{
+  "mcpServers": {
+    "stripe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@stripe/mcp",
+        "--api-key=",
+        "--tools=all"
+      ]
+    }
+  }
+}
