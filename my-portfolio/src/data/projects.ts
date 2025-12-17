@@ -178,4 +178,64 @@ export const projectsData: Project[] = [
     // paidSource: true,
     pricing: 200.00
   },
+
+  // Módulo de Autenticação
+  {
+    id: "10",
+    title: {
+      pt: "SolarProject - Ecommercer sobre painéis solares - Módulo de autenticação",
+      en: "SolarProject - Ecommerce about solar panels - Authentication Module"
+    },
+    description: {
+      pt: "Módulo de autenticação para o SolarProject - Ecommercer sobre painéis solares",
+      en: "Auth Module for the SolarProject - Ecommerce about solar panels"
+    },
+    image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x250/1a1a1a/3b82f6?text=Solar+Project',
+    github: "https://github.com/josevitor555/SolarProject.git",
+    liveDemo: "#",
+    technologies: ["Django", "Python", "PostgreSQL", "HTML", "CSS", "TypeScript", "React"],
+    featured: true,
+    // paidSource: true,
+    pricing: 200.00
+  },
+
+  // Módulo de Pagamento (Via Stripe)
+  {
+    id: "11",
+    title: {
+      pt: "SolarProject - Ecommercer sobre painéis solares - Módulo de pagamento",
+      en: "SolarProject - Ecommerce about solar panels - Payment Module"
+    },
+    description: {
+      pt: "Módulo de pagamento para o SolarProject - Ecommercer sobre painéis solares",
+      en: "Payment Module for the SolarProject - Ecommerce about solar panels"
+    },
+    image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x250/1a1a1a/3b82f6?text=Stripe+Django',
+    github: "https://github.com/josevitor555/django-stripe_app.git",
+    liveDemo: "#",
+    technologies: ["Django", "Python", "PostgreSQL", "HTML", "CSS", "Stripe Payment"],
+    featured: true,
+    // paidSource: true,
+    pricing: 200.00
+  },
+
+  // Aplicativo Pomodoro Task App
+  {
+    id: "12",
+    title: {
+      pt: "Aplicativo Pomodoro Task App",
+      en: "Pomodoro Task App"
+    },
+    description: {
+      pt: "Aplicativo de gerenciamento de tempo e tarefas com foco no método Pomodoro.",
+      en: "Time and task management app focused on the Pomodoro method."
+    },
+    image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/400x250/1a1a1a/3b82f6?text=Pomodoro+App',
+    github: "https://github.com/josevitor555/pomodoro_app.git",
+    liveDemo: "#",
+      technologies: ["Flutter", "Dart"],
+    featured: true,
+    // paidSource: true,
+    pricing: 200.00
+  },
 ];

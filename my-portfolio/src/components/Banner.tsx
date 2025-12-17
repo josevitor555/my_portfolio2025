@@ -2,7 +2,7 @@
 // import React from 'react'
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Download, ChevronDown, Volume2, VolumeX } from 'lucide-react';
-import Comp412 from './ui/comp-412';
+// import Comp412 from './ui/comp-412';
 import Comp296 from './ui/com-296'; // Using existing component
 import { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -190,14 +190,14 @@ const Banner = ({ isPlaying, setIsPlaying }: BannerProps) => {
             </motion.div>
 
             {/* Trusted by */}
-            <motion.div
+            {/* <motion.div
               className="flex items-center justify-center mt-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <Comp412 />
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
 

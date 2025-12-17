@@ -371,8 +371,8 @@ export const translations: TranslationData = {
     en: 'Designs'
   },
   'figma.subtitle': {
-    pt: 'Explore meus projetos de design criados no Figma. Cada design representa uma solução criativa para problemas reais de UX/UI.',
-    en: 'Explore my design projects created in Figma. Each design represents a creative solution to real UX/UI problems.'
+    pt: 'Explore meus projetos de design criados no Figma. Cada design representa uma solução criativa para problemas reais de UX/UI. (Seção ainda em Desenvolvimento)',
+    en: 'Explore my design projects created in Figma. Each design represents a creative solution to real UX/UI problems. (Section still under development).'
   },
   'figma.featured': {
     pt: 'Em Destaque',
