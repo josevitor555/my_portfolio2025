@@ -56,8 +56,8 @@ const Banner = ({ isPlaying, setIsPlaying }: BannerProps) => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Curriculo.pdf';
-    link.download = 'Curriculo.pdf';
+    link.href = '/my_profile.pdf';
+    link.download = 'my_profile.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
