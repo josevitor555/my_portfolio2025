@@ -29,13 +29,17 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173', // Development
-    'https://my-portfolio2025-backend.onrender.com' // Production
+    'https://my-portfolio2025-rx2d.onrender.com', // Production frontend
+    'https://my-portfolio2025-backend.onrender.com' // Production backend
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  exposedHeaders: ['Access-Control-Allow-Origin']
 }));
 
+// Handle preflight requests
+app.options('*', cors());
 // Middleware to parse JSON
 app.use(express.json());
 
