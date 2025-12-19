@@ -38,8 +38,6 @@ app.use(cors({
   exposedHeaders: ['Access-Control-Allow-Origin']
 }));
 
-// Handle preflight requests
-app.options('*', cors());
 // Middleware to parse JSON
 app.use(express.json());
 
