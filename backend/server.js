@@ -13,10 +13,6 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 // Import chat history
 import chatHistory from './chatHistory.js';
 
-// Import generated chat context
-import { chatContext } from './generated/chatContext.js';// Configure env
-dotenv.config();
-
 // Import cors
 import cors from 'cors';
 
