@@ -181,7 +181,7 @@ const Experience = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass-effect rounded-xl overflow-hidden border border-gray-700/50"
+                            className="glass-effect rounded-xl overflow-hidden border border-white/10"
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}
@@ -229,7 +229,7 @@ const Experience = () => {
                                         transition={{ duration: 0.3 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-6 pb-6 border-t border-gray-700/50">
+                                        <div className="px-6 pb-6 border border-white/10">
                                             <div className="pt-4 space-y-4">
                                                 <p className="text-gray-300 leading-relaxed">
                                                     {experience.description}
@@ -278,7 +278,7 @@ const Experience = () => {
                     className="text-center mt-12"
                 >
 
-                    <div className="glass-effect border border-gray-700/50 rounded-xl p-6">
+                    <div className="glass-effect border border-white/10 rounded-xl p-6">
                         <h3 className="text-xl font-semibold mb-2">{t('experience.workTogether')}</h3>
                         <p className="text-white mb-4">
                             {t('experience.workTogetherDesc')}

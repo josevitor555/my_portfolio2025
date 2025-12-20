@@ -116,7 +116,7 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
                 <DialogHeader className="px-6 py-4 border-b border-border">
                     <DialogTitle className="flex items-center gap-2">
                         <Bot className="w-5 h-5" />
-                        Chat Assistant
+                        Miranda Assistant
                     </DialogTitle>
                 </DialogHeader>
 

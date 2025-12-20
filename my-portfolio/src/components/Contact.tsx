@@ -154,7 +154,7 @@ const Contact = () => {
                             )}
 
                             {/* Form */}
-                            <form onSubmit={handleSubmit} className="space-y-6 rounded-lg border border-gray-600 p-6 sm:p-8 md:p-10">
+                            <form onSubmit={handleSubmit} className="space-y-6 rounded-lg border border-white/10 p-6 sm:p-8 md:p-10">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -298,7 +298,7 @@ const Contact = () => {
                                 {t('contact.workTogetherDesc')}
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {['React', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'MySQL', 'MongoDB'].map((skill) => (
+                                {['React', 'TypeScript', 'JavaScript', 'Node.js', 'Python', 'Django', 'API RestFull', 'Axios HTTP', 'MySQL', 'MongoDB', 'Supabase', 'PostgreSQL', 'Figma UI/UX', 'Flutter Mobile Dev', 'AI API Integration', 'Stripe', 'Next.js', 'Full-Stack Dev'].map((skill) => (
                                     <Badge
                                         key={skill}
                                         variant="default"
