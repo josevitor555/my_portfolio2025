@@ -92,7 +92,7 @@ const Contact = () => {
     ];
 
     const socialLinks = [
-        { icon: Instagram, href: 'https://www.instagram.com/_kick.buttowski468/', label: 'Instagram' },
+        { icon: Instagram, href: 'https://www.instagram.com/_jose_vitor.dev?igsh=MTU5bHVoNTJtbHF2Nw/', label: 'Instagram' },
         { icon: Linkedin, href: 'https://www.linkedin.com/in/jos%C3%A9-vitor-sousa2003/', label: 'LinkedIn' },
         { icon: Youtube, href: 'https://www.youtube.com/@pen-coding', label: 'YouTube' },
     ];
