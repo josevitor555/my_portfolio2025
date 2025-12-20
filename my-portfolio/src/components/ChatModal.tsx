@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,11 +20,27 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 1,
-            content: "Olá! Como posso ajudar você hoje?",
+            content: "Segue o Instagram de @_jose_vitor.dev",
             sender: "bot",
         },
     ]);
     const [inputValue, setInputValue] = useState("");
+    const closeAudioRef = useRef<HTMLAudioElement | null>(null);
+
+    useEffect(() => {
+        // Create audio context when component mounts
+        if (typeof window !== 'undefined') {
+            // Load the close notification sound
+            closeAudioRef.current = new Audio('/audios/discord-notification-uncall-fx.wav');
+        }
+    }, []);
+
+    useEffect(() => {
+        // Play sound when chat closes
+        if (!open && closeAudioRef.current) {
+            closeAudioRef.current.play().catch(e => console.log("Audio play failed:", e));
+        }
+    }, [open]);
 
     const handleSend = async () => {
         if (!inputValue.trim()) return;
