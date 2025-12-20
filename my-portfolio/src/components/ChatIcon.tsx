@@ -11,7 +11,7 @@ const ChatIcon = () => {
         // Create audio context when component mounts
         if (typeof window !== 'undefined') {
             // Load the notification sound
-            audioRef.current = new Audio('/audios/discord-notification-disconnect-fx.wav');
+            audioRef.current = new Audio('/audios/discord-call-join-sfx.wav');
         }
     }, []);
     useEffect(() => {

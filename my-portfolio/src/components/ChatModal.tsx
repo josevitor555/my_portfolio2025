@@ -26,12 +26,15 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
     ]);
     const [inputValue, setInputValue] = useState("");
     const closeAudioRef = useRef<HTMLAudioElement | null>(null);
+    const messageReceivedAudioRef = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {
         // Create audio context when component mounts
         if (typeof window !== 'undefined') {
             // Load the close notification sound
             closeAudioRef.current = new Audio('/audios/discord-notification-uncall-fx.wav');
+            // Load the message received sound
+            messageReceivedAudioRef.current = new Audio('/audios/discord-notification-fx_G_major.wav');
         }
     }, []);
 
@@ -79,6 +82,11 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
             };
 
             setMessages((prev) => [...prev, aiResponse]);
+            
+            // Play sound when receiving a message from the bot
+            if (messageReceivedAudioRef.current) {
+                messageReceivedAudioRef.current.play().catch(e => console.log("Audio play failed:", e));
+            }
         } catch (error: any) {
             console.error("Error calling backend API:", error);
 
@@ -89,6 +97,11 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
             };
 
             setMessages((prev) => [...prev, errorMessage]);
+            
+            // Play sound when receiving an error message from the bot
+            if (messageReceivedAudioRef.current) {
+                messageReceivedAudioRef.current.play().catch(e => console.log("Audio play failed:", e));
+            }
         }
     }; const handleKeyPress = (e: React.KeyboardEvent) => {
         if (e.key === "Enter" && !e.shiftKey) {
