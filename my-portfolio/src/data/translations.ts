@@ -1084,8 +1084,8 @@ export const translations: TranslationData = {
     en: 'New functionality!'
   },
   'dev.alert.description': {
-    pt: 'Experimente a nova funcionalidade! Crie uma conta gratuita com sessão válida por 1 hora. Após esse período, será necessário realizar login novamente ou, se preferir, excluir sua conta. O site ainda está em desenvolvimento.',
-    en: 'Try the new feature! Create a free account with a 1-hour session. After that, you will need to log in again or, if you prefer, delete your account. The site is still under development.'
+    pt: 'Conheça "Miranda", uma assistente virtual e pessoal! Minha recepcionista.',
+    en: 'Meet "Miranda," a virtual and personal assistant! My receptionist.'
   },
   'dev.alert.understood': {
     pt: 'Entendi',

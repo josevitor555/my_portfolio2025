@@ -199,7 +199,7 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="px-4 py-2 border-t border-border">
+                {/* <div className="px-4 py-2 border-t border-border">
                     <div className="flex gap-2">
                         <Button variant="outline" size="sm" className="text-xs">
                             FAQ
@@ -211,7 +211,7 @@ const ChatModal = ({ open, onOpenChange }: ChatModalProps) => {
                             Support
                         </Button>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Input Area */}
                 <div className="p-4 border-t border-border">
