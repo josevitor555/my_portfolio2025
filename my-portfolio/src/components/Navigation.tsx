@@ -143,7 +143,7 @@ const Navigation = () => {
                 ...getHeaderStyle()
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed z-50 bg-white/[0.05] backdrop-blur-3xl border border-white/[0.3]"
+            className="fixed z-50 bg-white/[0.05] backdrop-blur-3xl border border-white/[0.1]"
         >
 
             <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">

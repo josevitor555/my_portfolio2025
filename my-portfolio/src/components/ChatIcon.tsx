@@ -22,7 +22,7 @@ const ChatIcon = () => {
     }, [isChatOpen]);
 
     return (<>
-        <div className="fixed bottom-8 right-8 z-50">
+        <div className="fixed bottom-8 right-8 z-40">
             <button
                 className="bg-white border border-gray-600 p-6 cursor-pointer rounded-full shadow-lg flex items-center justify-center w-12 h-12"
                 onClick={() => setIsChatOpen(true)}
